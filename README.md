@@ -35,3 +35,30 @@ HuggingFace Embeddings
 Google Gemma-2-2B-IT
 Faster-Whisper (for video transcription)
 NLP & Prompt Engineering.
+
+Workflow :
+1️)Transcript Ingestion
+
+YouTube transcripts via youtube-transcript-api
+
+Video transcription via Faster-Whisper
+
+2️)Chunking & Indexing
+
+Timestamp-aware chunk creation
+
+Embedding generation
+
+Storage in FAISS vector database
+
+3️) Retrieval
+
+Similarity-based retrieval using embeddings
+
+4️) Augmentation & Generation
+
+Retrieved chunks passed to LLM
+
+Structured prompts enforce grounded answers
+
+Outputs include explanations, summaries, and timestamps.
